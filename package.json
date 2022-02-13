@@ -1,0 +1,22 @@
+{
+  "name": "gm-readme-gen",
+  "version": "1.0.0",
+  "description": "Generates readme.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geo-a-mac/GM-readme-gen.git"
+  },
+  "author": "George McAlpine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geo-a-mac/GM-readme-gen/issues"
+  },
+  "homepage": "https://github.com/geo-a-mac/GM-readme-gen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
