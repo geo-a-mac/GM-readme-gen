@@ -1,3 +1,4 @@
+// TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
@@ -13,7 +14,7 @@ const mockData = {
     questions: 'none'
 }
 
-// TODO: Include packages needed for this application
+
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -76,7 +77,7 @@ const promptUser = () => {
             type: 'checkbox',
             name: 'license',
             message: 'What license does this app have?',
-            choices: ['BSD 3-Clause', 'BSD 2-Clause', 'MIT', 'Mozilla Public License 2.0', 'Common Development and Distribution']
+            choices: ['BSD 3-Clause', 'BSD 2-Clause', 'MIT']
         },
         {
             type: 'input',
@@ -130,11 +131,9 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    //promptUser()
-    //.then(data => generateMarkdown(data))
-    //.then(markdown => writeToFile('readme.md', markdown));
-    const page = generateMarkdown(mockData);
-    writeToFile('readme.md', page);
+    promptUser()
+    .then(data => generateMarkdown(data))
+    .then(markdown => writeToFile('SampleReadme.md', markdown));
 }
 
 // Function call to initialize app
