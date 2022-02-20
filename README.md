@@ -24,5 +24,7 @@
   ## Usage
   at command line: node run index.js
    
- 
+  Link to usage video: https://drive.google.com/file/d/1RP3H1aTIQHn1TSQxThppaM4qMqk-u96e/view
+  
+  
   
